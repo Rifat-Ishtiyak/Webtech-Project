@@ -5,7 +5,6 @@
 	}
     $name=$_SESSION['nam'];
 
-
 ?>
 
 

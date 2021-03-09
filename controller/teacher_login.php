@@ -16,8 +16,6 @@
 				if ($temp[$key1]["id"]==$_POST['id'] and $temp[$key1]["pass"]==$_POST['pass']) {
 					$f=1;
 					$_SESSION['nam']=$temp[$key1]["name"];
-					
-
 				}
 
 			}

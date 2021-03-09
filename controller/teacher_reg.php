@@ -6,11 +6,16 @@
         else{
             //validation check
 
+            $temp_dob=explode('-', $_POST['dob']);
+
             $target_file = basename($_FILES["profilePic"]["name"]);
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
             if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
                 echo "only jpeg, jpg & png files are allowed.";
+            }
+            if ($temp_dob[0]>2015) {
+                echo"Please select year before 2015.";
             }
             else{
 

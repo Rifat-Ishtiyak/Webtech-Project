@@ -53,34 +53,14 @@
                     </li>
                 </ul>
             </td>
-            <td colspan="2">
-                <table border="1">
-                    <tr>
-                        <th colspan="3">Class Schedule</th>
-                    </tr>
-                    <tr>
-                        <td>date</td>
-                        <td>
-                            subj1
-                            Time: Mon 2 PM - Mon 3.30 PM
-                        </td>
-                        <td>
-                            subj2
-                            Time: Mon 2 PM - Mon 3.30 PM
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>date</td>
-                        <td>
-                            subj1
-                            Time: Mon 2 PM - Mon 3.30 PM
-                        </td>
-                        <td>
-                            subj2
-                            Time: Mon 2 PM - Mon 3.30 PM
-                        </td>
-                    </tr>
-                </table>
+            <td align="center" colspan="2">
+                <img src="..//assets/academic.jpg" widht="600px" height="600px" alt="">
+                <br>
+                <br>
+                <a href="..//assets/academic.jpg"><button>Download</button></a>
+                <br>
+                <br>
+
             </td>
         </tr>
         <tr>

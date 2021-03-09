@@ -17,6 +17,9 @@
             $phone=$temp[$key1]["phone"];
             $dob=$temp[$key1]["dob"];
             $picture=$temp[$key1]["profilePic"];
+            $address=$temp[$key1]["address"];
+            $designation=$temp[$key1]["desig"];
+            $qualification=$temp[$key1]["qualification"];
 
         }
     }
@@ -31,7 +34,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome <?php echo $namep ?></title>
 </head>
 <body>
     <table border="1" width="100%">
@@ -61,7 +64,10 @@
                     <li>
                         Others
                         <ul>
-                            <li><a href="">Dowload Forms</a></li>
+                            <li><a href="../view/download_form.php">Dowload Forms</a></li>
+                            <li>
+                                <a href="../view/academic_calender.php">Academic Calender</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -86,6 +92,14 @@
                         <td colspan="2"><hr></td>
                     </tr>
                     <tr>
+                        <td>Designation </td>
+                        <td>: <?php echo $designation ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
                         <td>Email </td>
                         <td>: <?php echo $email ?></td>
                     </tr>
@@ -107,8 +121,22 @@
                         <td colspan="2"><hr></td>
                     </tr>
                     <tr>
+                        <td>Address </td>
+                        <td>: <?php echo $address ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
                         <td>Date of Birth </td>
                         <td>: <?php echo $dob ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td>Qualifiaction </td>
+                        <td>: <?php echo $qualification ?></td>
                     </tr>
                     <tr>
                         <td colspan="2"><hr></td>

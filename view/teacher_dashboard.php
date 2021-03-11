@@ -22,7 +22,7 @@
         <tr>
             <td align="center" width="550px"><h2><img src="../assets/logo.png" width="40px" height="60px" alt=""> School Management System</h2></td>
             <td width="400px" align="center"><h3><b>Welcome <a href="teacher_profile.php"><?php echo $name ?></a></b></h3> </td>
-            <td align="center"><a href="../view/teacher_dashboard.php">Home</a> | <a href=" ">Notifications</a> | <a href=" ">Settings | <a href="../controller/teacher_logout.php">Logout</a></a></td>
+            <td align="center"><a href="../view/teacher_dashboard.php">Home</a> | <a href=" ">Notifications</a> | <a href="../view/teacher_settings.php">Settings | <a href="../controller/teacher_logout.php">Logout</a></a></td>
         </tr>
         <tr height=600px>
             <td style="font-size: large;">
@@ -42,6 +42,7 @@
                     </li>
                     <li>Course Result</li>
                     <li>Student Details</li>
+                    <a href=""><li>Contact Parents</li></a>
                     <li>
                         Others
                         <ul>

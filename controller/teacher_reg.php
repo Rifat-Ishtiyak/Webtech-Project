@@ -33,7 +33,7 @@
                 $bloodGroop=$_POST['bloodGroup'];
                 $qualification=$_POST['qualification'];
 
-                $user=['name'=> $name, 'id'=>$id, 'desig'=>$designation,'email'=> $email, 'bloodGroup'=> $bloodGroop , 'phone'=>$phone, 'address'=>$address, 'pass'=>$pass, 'dob'=>$dob, 'profilePic'=>$profilePic, 'qualification'=>$qualification ];
+                $user=['name'=> $name, 'id'=>'T'.$id, 'desig'=>$designation,'email'=> $email, 'bloodGroup'=> $bloodGroop , 'phone'=>$phone, 'address'=>$address, 'pass'=>$pass, 'dob'=>$dob, 'profilePic'=>$profilePic, 'qualification'=>$qualification ];
 
                 if ($pass!=$cPass) {
                     echo"please check your password and confirm password";

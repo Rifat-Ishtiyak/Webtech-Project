@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome <?php echo $name ?></title>
+    <title>settings</title>
 </head>
 <body>
     <table border="1" width="100%">
@@ -53,14 +53,36 @@
                     </li>
                 </ul>
             </td>
-            <td align="center" colspan="2">
-                <img src="..//assets/academic.jpg" widht="600px" height="600px" alt="">
-                <br>
-                <br>
-                <a href="..//assets/academic.jpg"><button>Download</button></a>
-                <br>
-                <br>
-
+            <td colspan="2">
+                <fieldset>
+                    <legend><h2><b>Password Change</b></h2></legend>
+                    <form action="../controller/teacher_passChange.php" method="POST">
+                        <table border="0">
+                            <tr>
+                                <td>
+                                    Enter your ID
+                                </td>
+                                <td>:
+                                    <input type="text" name="id" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Pssword
+                                </td>
+                                <td>:
+                                    <input type="text" name="newP" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" colspan="2">
+                                    <input type="submit" name="submit" value="Submit">
+                                    <input type="reset" value="reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
             </td>
         </tr>
         <tr>

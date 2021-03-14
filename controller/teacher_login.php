@@ -16,6 +16,7 @@
 				if ($temp[$key1]["id"]==$_POST['id'] and $temp[$key1]["pass"]==$_POST['pass']) {
 					$f=1;
 					$_SESSION['nam']=$temp[$key1]["name"];
+					$_SESSION['id']=$temp[$key1]["id"];
 				}
 
 			}
@@ -23,7 +24,8 @@
 				$_SESSION['flag'] = true;
 				$name=$_POST['username'];
 				
-				header('location: ../view/teacher_dashboard.php');
+				//header('location: ../view/teacher_dashboard.php');
+				header('location: ../controller/teacher_class_schedule.php');
 			}
 			else{
 				echo"invaild user";

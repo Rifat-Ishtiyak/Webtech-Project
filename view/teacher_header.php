@@ -32,7 +32,7 @@
                     <li>
                         Assignments
                         <ul>
-                            <li><a href="">upload files</a></li>
+                            <li><a href="../view/teacher_uplaod.php">upload files</a></li>
                         </ul>
                     </li>
                     <li>

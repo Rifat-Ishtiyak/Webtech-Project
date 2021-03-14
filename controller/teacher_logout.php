@@ -16,6 +16,6 @@
     }
 
 
-	header('location: ../view/login.html');
+	header('location: ../view/teacher_login.html');
 
 ?>

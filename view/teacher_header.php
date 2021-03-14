@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['flag'])){
-		header('location: login.html');
+		header('location: teacher_login.html');
 	}
     $name=$_SESSION['nam'];
 

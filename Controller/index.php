@@ -1,4 +1,6 @@
-
+<?php
+	$title = "Index Page";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +10,17 @@
     <title>Home</title>
 </head>
 <body>
-    <table border="0" width="100%">
+    <table border="1" width="100%">
         <tr>
-            <td align="center" width="550px"><h2><img src="assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
+            <td align="center" width="550px"><h2><img src="Assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
             <td width="400px"> </td>
             <td align="center"><a href="home.html">Home</a> | <a href="view/login.html">Login</a> | <a href="view/registrationT.html">Registration</a></td>
         </tr>
         <tr>
-            <td></td>
-            <td  height="550px" align="center" style="background-color: green;">
+            <td>
+                <h3>event notice<h3>
+            </td>
+            <td  height="550px" align="center" style="background-color:lightblue;">
                 
             </td>
             <td></td>

@@ -1,10 +1,13 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['flag'])){
-		header('location: login.html');
+		header('location: teacher_login.html');
 	}
     $name=$_SESSION['nam'];
 
+
+   // header('location: ../controller/teacher_class_schedule.php');
+    
 ?>
 
 
@@ -29,14 +32,14 @@
                     <li>
                         Assignments
                         <ul>
-                            <li><a href="">upload files</a></li>
+                            <li><a href="../view/teacher_uplaod.php">upload files</a></li>
                         </ul>
                     </li>
                     <li>
                         Attendence
                         <ul>
-                            <li><a href="">Take Attendence</a></li>
-                            <li><a href="">View Attendence</a></li>
+                            <li><a href="../view/teacher_attendance.php">Take Attendance</a></li>
+                            <li><a href="../view/teacher_attendance_view.php">View Attendance</a></li>
                         </ul>
                     </li>
                     <li>Course Result</li>
@@ -54,18 +57,3 @@
                 </ul>
             </td>
             <td align="center" colspan="2">
-                <img src="..//assets/academic.jpg" widht="600px" height="600px" alt="">
-                <br>
-                <br>
-                <a href="..//assets/academic.jpg"><button>Download</button></a>
-                <br>
-                <br>
-
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">Copyright &COPY 2021</td>
-        </tr>
-    </table>
-</body>
-</html>

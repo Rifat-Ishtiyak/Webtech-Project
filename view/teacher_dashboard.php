@@ -1,91 +1,62 @@
-<?php
-	session_start();
-	if(!isset($_SESSION['flag'])){
-		header('location: login.html');
-	}
-    $name=$_SESSION['nam'];
-
-
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome <?php echo $name ?></title>
-</head>
-<body>
-    <table border="1" width="100%">
-        <tr>
-            <td align="center" width="550px"><h2><img src="../assets/logo.png" width="40px" height="60px" alt=""> School Management System</h2></td>
-            <td width="400px" align="center"><h3><b>Welcome <a href="teacher_profile.php"><?php echo $name ?></a></b></h3> </td>
-            <td align="center"><a href="../view/teacher_dashboard.php">Home</a> | <a href=" ">Notifications</a> | <a href=" ">Settings | <a href="../controller/teacher_logout.php">Logout</a></a></td>
-        </tr>
-        <tr height=600px>
-            <td style="font-size: large;">
-                <ul>
-                    <li>
-                        Assignments
-                        <ul>
-                            <li><a href="">upload files</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Attendence
-                        <ul>
-                            <li><a href="">Take Attendence</a></li>
-                            <li><a href="">View Attendence</a></li>
-                        </ul>
-                    </li>
-                    <li>Course Result</li>
-                    <li>Student Details</li>
-                    <li>
-                        Others
-                        <ul>
-                            <li><a href="../view/download_form.php">Dowload Forms</a></li>
-                            <li>
-                                <a href="../view/academic_calender.php">Academic Calender</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </td>
-            <td colspan="2">
-                <table border="1">
+    <?php 
+        include('teacher_header.php');
+    ?>
+                
+                <table border="0" style="font-size: 22px;">
                     <tr>
-                        <th colspan="3">Class Schedule</th>
+                        <th colspan="0"><h2>Class Schedule</h2></th>
                     </tr>
                     <tr>
-                        <td>date</td>
                         <td>
-                            subj1
-                            Time: Mon 2 PM - Mon 3.30 PM
-                        </td>
-                        <td>
-                            subj2
-                            Time: Mon 2 PM - Mon 3.30 PM
+                            <?php 
+                                if(isset($_COOKIE['class0'])){
+                                    echo "Class: ".$_COOKIE['class0']." | ";
+                                    echo "Start Time: ".$_COOKIE['startTime0']." | ";
+                                    echo "End Time: ".$_COOKIE['endTime0']." | ";
+                                    echo "Subject: ".$_COOKIE['subject0'];
+                                }
+                            ?>
                         </td>
                     </tr>
                     <tr>
-                        <td>date</td>
                         <td>
-                            subj1
-                            Time: Mon 2 PM - Mon 3.30 PM
+                            <?php 
+                                if(isset($_COOKIE['class1'])){
+                                    echo "Class: ".$_COOKIE['class1']." | ";
+                                    echo "Start Time: ".$_COOKIE['startTime1']." | ";
+                                    echo "End Time: ".$_COOKIE['endTime1']." | ";
+                                    echo "Subject: ".$_COOKIE['subject1'];
+                                }
+                            ?>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
-                            subj2
-                            Time: Mon 2 PM - Mon 3.30 PM
+                            <?php 
+                                if(isset($_COOKIE['class2'])){
+                                    echo "Class: ".$_COOKIE['class2']." | ";
+                                    echo "Start Time: ".$_COOKIE['startTime2']." | ";
+                                    echo "End Time: ".$_COOKIE['endTime2']." | ";
+                                    echo "Subject: ".$_COOKIE['subject2'];
+                                }
+                            ?>
                         </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <?php 
+                                if(isset($_COOKIE['class3'])){
+                                    echo "Class: ".$_COOKIE['class3']." | ";
+                                    echo "Start Time: ".$_COOKIE['startTime3']." | ";
+                                    echo "End Time: ".$_COOKIE['endTime3']." | ";
+                                    echo "Subject: ".$_COOKIE['subject3'];
+                                }
+                            ?>
+                        </td>
+                        </tr>
                     </tr>
                 </table>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">Copyright &COPY 2021</td>
-        </tr>
-    </table>
-</body>
-</html>
+    
+    <?php 
+        include('teacher_footer.php');
+    ?>      

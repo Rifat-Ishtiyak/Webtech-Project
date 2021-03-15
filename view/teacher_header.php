@@ -38,8 +38,8 @@
                     <li>
                         Attendence
                         <ul>
-                            <li><a href="">Take Attendence</a></li>
-                            <li><a href="">View Attendence</a></li>
+                            <li><a href="../view/teacher_attendance.php">Take Attendance</a></li>
+                            <li><a href="../view/teacher_attendance_view.php">View Attendance</a></li>
                         </ul>
                     </li>
                     <li>Course Result</li>

@@ -1,6 +1,6 @@
 <?php 
     if(isset($_POST['submit'])){
-        if(empty($_POST['name']) || empty($_POST['id']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['desig']) || empty($_POST['address']) || empty($_POST['bloodGroup']) || empty($_POST['pass']) || empty($_POST['cPass']) || empty($_POST['dob'])){
+        if(empty($_POST['name']) || empty($_POST['id']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['gender']) || empty($_POST['desig']) || empty($_POST['address']) || empty($_POST['bloodGroup']) || empty($_POST['pass']) || empty($_POST['cPass']) || empty($_POST['dob'])){
             echo"Plaese fill out all the field <br>";
         }
         else{
@@ -27,11 +27,12 @@
                 $pass = $_POST['pass'];
                 $cPass=$_POST['cPass'];
                 $dob=$_POST['dob'];
+                $gender=$_POST['gender'];
                 move_uploaded_file($_FILES['profilePic']['tmp_name'], '../assets/'.$_FILES['profilePic']['name']);
                 $profilePic='../assets/'.$_FILES['profilePic']['name'];
                 $bloodGroop=$_POST['bloodGroup'];
                 $qualification=$_POST['qualification'];
-                $user=['name'=> $name, 'id'=>'T'.$id, 'desig'=>$designation,'email'=> $email, 'bloodGroup'=> $bloodGroop , 'phone'=>$phone, 'address'=>$address, 'pass'=>$pass, 'dob'=>$dob, 'profilePic'=>$profilePic, 'qualification'=>$qualification ];
+                $user=['name'=> $name, 'id'=>'T'.$id, 'desig'=>$designation,'email'=> $email, 'bloodGroup'=> $bloodGroop , 'gender'=>$gender , 'phone'=>$phone, 'address'=>$address, 'pass'=>$pass, 'dob'=>$dob, 'profilePic'=>$profilePic, 'qualification'=>$qualification ];
                 
                 //validation check 2
                 $error=false;

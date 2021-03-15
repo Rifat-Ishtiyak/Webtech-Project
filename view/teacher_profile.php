@@ -10,6 +10,7 @@
             $id=$temp[$key1]["id"];
             $email=$temp[$key1]["email"];
             $bloodGroup=$temp[$key1]["bloodGroup"];
+            $gender=$temp[$key1]["gender"];
             $phone=$temp[$key1]["phone"];
             $dob=$temp[$key1]["dob"];
             $picture=$temp[$key1]["profilePic"];
@@ -67,6 +68,13 @@
                     <tr>
                         <td>Phone </td>
                         <td>: <?php echo $phone ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td>Gender </td>
+                        <td>: <?php echo $gender ?></td>
                     </tr>
                     <tr>
                         <td colspan="2"><hr></td>

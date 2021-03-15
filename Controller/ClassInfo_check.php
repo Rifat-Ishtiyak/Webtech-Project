@@ -45,7 +45,7 @@
                         $jsonData = json_encode($tempArray);
                         file_put_contents('../Model/class_assign.json', $jsonData);
                     }
-                    header('location: ../Controller/classesInfo_list.php');
+                    header('location: ../view/classesInfo_list.php');
                 
                 
             }

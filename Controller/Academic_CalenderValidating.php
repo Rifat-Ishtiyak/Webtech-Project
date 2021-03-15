@@ -43,7 +43,7 @@ if(isset($_POST['submit']))
                 $jsonData = json_encode($tempArray);
                 file_put_contents('../Model/academicCalender.json', $jsonData);
             }
-            header('location: ../Controller/index.php');
+            header('location: ../view/admin_academicCalender.php');
         }   
     }
 }

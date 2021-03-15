@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-</head>
-<body>
-    <table border="1" width="100%">
-        <tr>
-            <td align="center" width="350px"><h2><img src="../Assets/logo.png" width="40px" height="60px" alt=""> School Management System</h2></td>
-            <td width="400px" align="center"><h3><b>Welcome <a href=" ">ABC</a></b></h3> </td>
-            <td align="center"><a href="AdminLandingPage.html">Home</a> | <a href=" ">Notifications</a> | <a href=" ">Settings | <a href="">Logout</a></a></td>
-        </tr>
-        <tr height=600px>
-            <td >
-                <ul>
-                    <li><a href="Admin_UserManip.html"><button>Users</button></a></li>
-                    <li><a href="AdmissionInfo.html"><button>Admission Info</button></a></li>
-                    <li><a href="Admin_Events.html"><button>Events</button></a></li>
-                    <li><a href="AcademicCalender.html"><button>Academic Calender</button></a></li>
-                    <li><a href="ClassesInfo.html"><button>Classes Info</button></a></li>
-                    <li><a href="Funds&Fees.html"><button>Funds & Fees</button></a></li>
-                    <li><a href="Exams.html"><button>Exams</button></a></li>
-                    <li><a href="AlumniInfo.html"><button>Alumni Info</button></a></li>
-                    
-                </ul>
-            </td>
-            <td colspan="2">
-                <table border="1">
+<?php 
+        include('admin_header.php');
+    ?>
+         <table border="1">
                     <tr>
                         <td align="left" width="375px">
-                            <form>
+                            <form method="POST" action="">
                                 <fieldset>
                                     <legend>Admission Test Date Publishing </legend>
                                     <table>
@@ -113,11 +86,6 @@
                     </tr>
                 </table>
 
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">Copyright©2021</td>
-        </tr>
-    </table>
-</body>
-</html>
+    <?php 
+        include('admin_footer.php');
+    ?>

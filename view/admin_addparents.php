@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-</head>
-<body>
-    <table border="0" width="100%">
-        <tr>
-            <td align="center" width="350pxpx"><h2><img src="../Assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
-            <td width="650px"> </td>
-            <td align="center"><a href="AdminLandingPage.html">Home</a> | <a href="Admin_UserManip.html">Users | <a href="Addteacher.html">Registration</a></a></td>
-        </tr>
-        <tr>
-            <tr height=600px>
-                <td >
-                    <ul>
-                        <li><a href="Admin_UserManip.html"><button>Users</button></a></li>
-                        <li><a href="AdmissionInfo.html"><button>Admission Info</button></a></li>
-                        <li><a href="Admin_Events.html"><button>Events</button></a></li>
-                        <li><a href="AcademicCalender.html"><button>Academic Calender</button></a></li>
-                        <li><a href="ClassesInfo.html"><button>Classes Info</button></a></li>
-                        <li><a href="Funds&Fees.html"><button>Funds & Fees</button></a></li>
-                        <li><a href="Exams.html"><button>Exams</button></a></li>
-                        <li><a href="AlumniInfo.html"><button>Alumni Info</button></a></li>
-                        
-                    </ul>
-                </td>
-            <td  height="600px" align="center">
+<?php 
+        include('admin_header.php');
+    ?>
                 <table border="0" width="100%">
                     <tr>
-                        <td width="100px"></td>
+                        <td width="300px"></td>
                         <td>
-                            <form method="POST" action="../Controller/teacher_regCheck.php" enctype="multipart/form-data">
+                            <form method="POST" action="../controller/parents_regCheck.php" enctype="multipart/form-data">
                                 <fieldset style="background-color:lemonchiffon;">
-                                    <legend><b>Add Teacher</b></legend>
+                                    <legend><b>Add Parents</b></legend>
                                     <table border="0">
                                         <tr>
                                             <td>ID</td>
@@ -50,6 +22,15 @@
                                             <td>Name</td>
                                             <td>:
                                                 <input type="text" name="name" id="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Student Id</td>
+                                            <td>:
+                                                <input type="text" name="studentId" id="">
                                             </td>
                                         </tr>
                                         <tr>
@@ -87,15 +68,6 @@
                                             <td>Phone</td>
                                             <td>:
                                                 <input type="tel" name="phone" id=""> 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"><hr></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Qualification</td>
-                                            <td>:
-                                                <textarea rows="3" cols="50" name="Qualification" required></textarea>
                                             </td>
                                         </tr>
                                         <tr>
@@ -147,7 +119,7 @@
                                             <td colspan="2">
                                                 <fieldset>
                                                     <legend>profilePic</legend>
-                                                 <input type="file" name="profilePic" id="">
+                                                 <input type="file" name="profilePicParents" id="">
                                                 </fieldset>
                                             </td>
                                         </tr>
@@ -163,16 +135,12 @@
                                     </table>
                                 </fieldset>
                             </form>
+                            <td width="300px"></td>
                         </td>
                         <td width="100px"></td>
                     </tr>
             </table>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">Copyright ©2021</td>
-        </tr>
-    </table>
-</body>
-</html>
+            
+    <?php 
+        include('admin_footer.php');
+    ?>

@@ -27,7 +27,11 @@ if(isset($_POST['submit']))
             $jsonData = json_encode($tempArray);
             file_put_contents('../Model/events.json', $jsonData);
         }
-        header('location: ../Controller/index.php');
+        setcookie('EventDate',$eventdate, time()+(86500*30),'/');
+        setcookie('EventTime',$eventtime, time()+(86500*30),'/');
+        setcookie('EDescription',$edescription, time()+(86500*30),'/');
+        
+        header('location: ../view/notice.php');
            
     }
 }

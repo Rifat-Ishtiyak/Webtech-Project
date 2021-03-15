@@ -124,7 +124,7 @@ session_start();
                 move_uploaded_file($_FILES['profilePicStudent']['tmp_name'], '../Assets/'.$_FILES['profilePicStudent']['name']);
                 $profilePicStudent='../Assets/'.$_FILES['profilePicStudent']['name'];
 
-                $Student=['id'=> $id,'name'=> $name, 'email'=> $email, 'phone'=>$phone, 'pass'=>$pass, 'dob'=>$dob,
+                $Student=['id'=>'S'.$id,'name'=> $name, 'email'=> $email, 'phone'=>$phone, 'pass'=>$pass, 'dob'=>$dob,
                     'profilePicStudent'=>$profilePicStudent, 'gender'=>$gender,'bloodGroup'=>$bloodGroup,
                     'Class'=>$Class];
                     if(filesize('../Model/Student.json')==0){
@@ -139,7 +139,7 @@ session_start();
                         $jsonData = json_encode($tempArray);
                         file_put_contents('../Model/Student.json', $jsonData);
                     }
-                    header('location: ../View/login.html');
+                    header('location: ../view/admin_landingpage.php');
                 }
                 
             }

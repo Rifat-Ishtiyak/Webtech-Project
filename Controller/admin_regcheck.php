@@ -33,7 +33,7 @@
                 $bloodGroop=$_POST['bloodGroup'];
                 $qualification=$_POST['qualification'];
                 
-                $user=['name'=> $name, 'id'=>'T'.$id, 
+                $admin=['name'=> $name, 'id'=>'A'.$id, 
                 'desig'=>$designation,'email'=> $email, 
                 'gender'=> $gender,'bloodGroup'=> $bloodGroop , 
                 'phone'=>$phone, 'address'=>$address, 'pass'=>$pass, 
@@ -71,19 +71,19 @@
 
 
                 elseif($error==false){
-                    if(filesize('../model/teacher.json')==0){
-                        $json=json_encode($user);
-                        $myfile=fopen('../model/teacher.json', 'w');
+                    if(filesize('../model/admin.json')==0){
+                        $json=json_encode($admin);
+                        $myfile=fopen('../model/admin.json', 'w');
                         fwrite($myfile, '['.$json.']');
                     }
                     else{
-                        $inp = file_get_contents('../model/teacher.json');
+                        $inp = file_get_contents('../model/admin.json');
                         $tempArray = json_decode($inp);
-                        array_push($tempArray, $user);
+                        array_push($tempArray, $admin);
                         $jsonData = json_encode($tempArray);
-                        file_put_contents('../model/teacher.json', $jsonData);
+                        file_put_contents('../model/admin.json', $jsonData);
                     }
-                    header('location: ../view/admin_landingpage.php');
+                    header('location: ../home.php');
                 }
 
             }

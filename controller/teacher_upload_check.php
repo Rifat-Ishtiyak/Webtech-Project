@@ -6,7 +6,7 @@
             echo" file size should not be more than 4MB";
           }
           else{
-            if (move_uploaded_file($_FILES['ufile']['tmp_name'], '../assets/student_upload/'.$_FILES['ufile']['name'])) {
+            if (move_uploaded_file($_FILES['ufile']['tmp_name'], '../assets/teacher_upload/'.$_FILES['ufile']['name'])) {
                 echo"uploaded";
             }
             else{

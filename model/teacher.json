@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+[{"name":"Captain America","id":"T01","desig":"Captain","email":"ca@gmail.com","gender":"Male","bloodGroup":"A+","phone":"11223344556","address":"Finland","pass":"123456","dob":"1999-02-03","profilePic":"..\/assets\/CaptainAmerica.jpg","qualification":"MA"}]
+=======
 [{"name":"Rifat Ishtiyak","id":"T12","desig":"Assistant Teacher","email":"rifatishtiyak@gmail.com","bloodGroup":"O+","gender":"Male","phone":"01786724845","address":"51s, Road 5F, Dhaka","pass":"rifat1234","dob":"1998-09-14","profilePic":"..\/assets\/1501941920593-e0b6172d-370a-4307-882d-484c6501705c_-01.jpeg","qualification":"BSc in CSE "}]
+>>>>>>> main

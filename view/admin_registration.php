@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-</head>
-<body>
-    <table border="0" width="100%">
-        <tr>
-            <td align="center" width="550px"><h2><img src="../assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
-            <td width="400px"> </td>
-<<<<<<< HEAD
-            <td align="center"><a href="../home.html">Home</a> | <a href="../view/login.html">Login | <a href="../view/registrationT.html">Registration</a></a></td>
-=======
-            <td align="center"><a href="../home.html">Home</a> | <a href="../view/teacher_login.html">Login | <a href="../view/teacher_reg.html">Registration</a></a></td>
->>>>>>> main
-        </tr>
-        <tr>
-            <td></td>
-            <td  height="600px" align="center">
-                <form method="POST" action="../controller/teacher_reg.php" enctype="multipart/form-data">
-                    <fieldset style="background-color: lemonchiffon;">
-                        <legend><b>REGISTRATION</b></legend>
-                        <table border="0">
-                            <tr>
+<?php 
+        include('admin_header.php');
+    ?>
+                <table border="0" width="100%">
+                    <tr>
+                        <td width="300px"></td>
+                        <td>
+                            <form method="POST" action="../controller/admin_regcheck.php" enctype="multipart/form-data">
+                                <fieldset style="background-color:lemonchiffon;">
+                                    <legend><b>Admin Regetration</b></legend>
+                                    <table border="0">
+                                    <tr>
                                 <td>Name</td>
                                 <td>:
                                     <input type="text" name="name" id="">
@@ -64,6 +49,7 @@
                                 <td>Blood Group</td>
                                 <td>:
                                     <select name="bloodGroup" id="">
+                                        <option value=""></option>
                                         <option value="A+">A+</option>
                                         <option value="B+">B+</option>
                                         <option value="AB+">AB+</option>
@@ -163,16 +149,15 @@
                                     <input type="submit" name="submit" value="Submit">
                                     <input type="reset" value="reset">
                                 </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </form>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">Copyright &COPY 2021</td>
-        </tr>
-    </table>
-</body>
-</html>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <td width="300px"></td>
+                        </td>
+                        <td width="100px"></td>
+                    </tr>
+            </table>
+            <?php 
+        include('admin_footer.php');
+    ?>

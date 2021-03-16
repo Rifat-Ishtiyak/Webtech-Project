@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-[{"Class":"6","classStartTime":"08:00","classEndTime":"08:45","Teacher_id":"T01","subject":"Math"},{"Class":"6","classStartTime":"08:00","classEndTime":"08:45","Teacher_id":"T01","subject":"Math"}]
-=======
-[{"class":"6","classStartTime":"08:00","classEndTime":"08:40","teacher_id":"T12","subject":"MATH"}, {"class":"8","classStartTime":"10:00","classEndTime":"11:40","teacher_id":"T12","subject":"English"}, {"class":"10","classStartTime":"3:00","classEndTime":"4:40","teacher_id":"T15","subject":"Geography"}, {"class":"10","classStartTime":"3:00","classEndTime":"4:40","teacher_id":"T15","subject":"Biology"}, {"class":"9","classStartTime":"3:00","classEndTime":"4:40","teacher_id":"T12","subject":"Chemistry"}, {"class":"7","classStartTime":"3:00","classEndTime":"4:40","teacher_id":"T12","subject":"Bangla"}]
->>>>>>> main

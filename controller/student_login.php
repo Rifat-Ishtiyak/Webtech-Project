@@ -3,7 +3,7 @@
     
     if (isset($_POST['submit'])) {
 
-        $inp = file_get_contents('../model/teacher.json');
+        $inp = file_get_contents('../model/student.json');
 		$temp = json_decode($inp, true);
 
 
@@ -16,7 +16,6 @@
 				if ($temp[$key1]["id"]==$_POST['id'] and $temp[$key1]["pass"]==$_POST['pass']) {
 					$f=1;
 					$_SESSION['nam']=$temp[$key1]["name"];
-					$_SESSION['id']=$temp[$key1]["id"];
 				}
 
 			}
@@ -24,8 +23,7 @@
 				$_SESSION['flag'] = true;
 				$name=$_POST['username'];
 				
-				//header('location: ../view/teacher_dashboard.php');
-				header('location: ../controller/teacher_class_schedule.php');
+				header('location: ../view/student_dashboard.php');
 			}
 			else{
 				echo"invaild user";

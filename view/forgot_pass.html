@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,34 +11,25 @@
 <body>
     <table border="0" width="100%">
         <tr>
-            <td align="center" width="550px"><h2><img src="../Assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
+            <td align="center" width="550px"><h2><img src="../assets/logo.png" width="40px" height="60px" alt="">School Management System</h2></td>
             <td width="400px"> </td>
-<<<<<<< HEAD:view/parents_login.html
-            <td align="center"><a href=" ">Home</a> | <a href=" ">Login</a>| <a href="registration.html">Registration</a></td>
-=======
             <td align="center"><a href="../home.html">Home</a> | <a href="../view/teacher_login.html">Login</a> | <a href="../view/teacher_reg.html">Registration</a></td>
->>>>>>> main:view/teacher_login.html
         </tr>
         <tr>
             <td></td>
             <td  height="550px" align="center">
-                <form method=""  action="">
+                <form method="POST"  action="../controller/teacher_passChange.php">
                   
                     <fieldset>
-                        <legend><b><h3>LOG IN</h3></b></legend>
-                        <table >
+                        <legend><b><h3>Forgot Pass</h3></b></legend>
+                        <table>
                             <tr>
                                 <td>ID No</td>
-                                <td>: <input type="text" name=""></td>
+                                <td>: <input type="text" name="id"></td>
                             </tr>
                             <tr>
-<<<<<<< HEAD:view/parents_login.html
-                                <td>Password:</td>
-                                <td>: <input type="password" name=""></td>
-=======
-                                <td>Password</td>
-                                <td>: <input type="password" name="pass"></td>
->>>>>>> main:view/teacher_login.html
+                                <td>New Password:</td>
+                                <td>: <input type="password" name="newP"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
@@ -52,13 +44,13 @@
                             </tr>
                             <tr>
                                 <td colspan="2" align="center" >
-                                    <input type="submit" name="submit" value="Log In" style="border-color: rgb(98, 177, 33); padding: 5px 110px; ">
+                                    <input type="submit" name="submit" value="Change Password" style="border-color: rgb(228, 9, 9); padding: 5px 110px; ">
                                 </td>
                             </tr>
                       
                             <tr>
                                <td colspan="2" align="right">
-                                <a href="forgot_pass.html"> Forgot Password?</a>
+                               
                                </td>
                             </tr>
                         </table>
